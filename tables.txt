@@ -1,0 +1,16 @@
+create table movies (
+Title VARCHAR Primary key,
+Release_Date VARCHAR(30),
+Director VARCHAR(30),
+Run_Time (mins) FLOAT,
+Age_Rating VARCHAR(30)
+);
+
+create table reviews (
+);
+
+
+
+create table music (
+Title VARCHAR Primary key,
+);
