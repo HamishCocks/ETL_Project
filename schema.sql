@@ -1,32 +1,32 @@
 create table Basic (
-Title VARCHAR(3) Primary key,
-Release_Date VARCHAR(30),
-Director VARCHAR(30),
-Run_Time (mins) FLOAT,
-Age_Rating VARCHAR(30)
+ID INT NOT NULL,
+Title VARCHAR(300) NOT NULL,
+Release_Date VARCHAR(300),
+Director VARCHAR(300),
+Run_Time VARCHAR(300),
+Age_Rating VARCHAR(300),
+Genre VARCHAR(300),
+PRIMARY KEY (Title, ID)
 );
 
 create table Rating (
-Title VARCHAR(30) Primary key,
+Title VARCHAR(100),
 IMDB FLOAT,
-Metascore FLOAT,
 Rotten_Tomatoes VARCHAR(30)
 );
 
-create table Cast (
-Title VARCHAR(30) Primary key,
-Hero VARCHAR(30),
-Villain VARCHAR(30),
-Character VARCHAR(30),
-Voice_Actor VARCHAR(30)
+create table Casting(
+Title VARCHAR(100),
+Hero VARCHAR(100),
+Villain VARCHAR(100),
+Character VARCHAR(100),
+Voice_Actor VARCHAR(100)
 );
 
 create table Crew (
-Title VARCHAR(30) Primary key,
-Writer VARCHAR(30),
-Music VARCHAR(30),
-Story VARCHAR(30),
-Cinematographer VARCHAR(30),
-Editor VARCHAR(30),
-Screenplay VARCHAR(30)
+Title VARCHAR(300),
+Composer VARCHAR(300),
+Cinematographer VARCHAR(300),
+Editor VARCHAR(300),
+Screenplay VARCHAR(300)
 );
